@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+body {
+  font-family: "Zen Maru Gothic", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+h3::after {
+  content:'';
+  display: block;
+  width: 700px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+p3 {
+  font-size: 40px;
+  color: red;
+  font-size: 30px;
+}
+
+.title {
+  height: 310px;
+  background-image: url(../images/kawarobo/hai3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.use {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.use p{
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+
+.img1 img{
+  width: 300px;
+}
+
+.img2 img{
+  width: 450px;
+}
+
+.img3 img{
+  width: 100;
+
+}
+
+.list2 {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px 10px; 
+  justify-content: center;
+}
+
+
+.list4 {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto 100px;
+  margin: 0px auto 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px 10px; 
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contents {
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+.contents p{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.contents p1{
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.contents p1::after {
+  content:'';
+  display: block;
+  width: 300px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.contents p2{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.contents p3{
+  font-size: 50px;
+  color: red;
+}
+
+.contents p4{
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+
+
+.cando-list {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto 20px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px; /* Adjust the gap between items */
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.UI-list {
+  width: 100%;
+  max-width: 100%;
+  margin: 0px auto 20px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 10px 10px; /* Adjust the gap between items */
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.demo{
+  margin-bottom: 100px;
+}
+
+.list2-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px; 
+  justify-items: center;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item1 {
+  padding-top: 0px;
+  justify-content: center;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.img4 img{
+  width: 700px;
+}
+
+.img5 img{
+  width: 600px;
+}
+
+.img6 img{
+  width: 600px;
+}
+
+.img7 img{
+  width: 450px;
+}
+.img8 img{
+  width: 90%;
+}
+.img9 img{
+  width: 80%;
+}
+
+
+
+
+.git {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 16px;
+  max-width: 500px;
+  margin-right: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.git-con {
+  display: flex;
+  align-items: center;
+}
+
+.github-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.git-container {
+  display: flex;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.git-con h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.git-con p {
+  margin: 0;
+  font-size: 24px;
+  color: #586069;
+}
+
+.kaizen {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+.kaizen p {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+
+
+
+
+.footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+  .title {
+    height: 150px;
+  }
+
+  .item-list {
+    margin-top: 45px;
+    row-gap: 40px;
+  }
+}
+

@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+
+body {
+  font-family: "Zen Maru Gothic", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  height: 310px;
+  background-image: url(../images/kawarobo/hai.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+.sub-title {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 500px;
+  text-align: center;
+}
+
+.sub-title h1 {
+  margin-top: 500px;
+  font-size: 60px;
+}
+
+.sub-title h1::after {
+  content: '';
+  display: block;
+  width: 500px;
+  height: 4px;
+  background-color: #000000;
+  margin: 20px auto 0;
+}
+
+.sub-title p {
+  margin-top: 50px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+
+.concept {
+  background-color: rgba(128, 128, 128, 0.118);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+  max-width: 90%;
+  align-items: center;
+  margin: 100px auto 0;
+}
+
+.concept img {
+  width: 350px;
+}
+
+.concept-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-right: 100px;
+}
+
+.concept-text h3 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.img3 img{
+  height: 350px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  margin: 100px auto 0;
+}
+
+.reverse .concept-text {
+  padding-left: 0px;
+  padding-right: 60px;
+  margin-right: 0px;
+  margin-left: 40px;
+}
+
+
+
+.footer {
+  margin-top: 100px;
+}
+
+
+@media (max-width: 800px) {
+  .title {
+    height:100px;
+  }
+
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .sub-title {
+    margin-bottom: 250px;
+  }
+
+  .sub-title h1 {
+    margin-top: 250px;
+    font-size: 40px;
+  }
+
+  .sub-title h1::after {
+    width: 100%;
+  }
+
+  .sub-title p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .concept {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 20px;
+    margin-top: 30px;
+    width: 90%;
+  }
+  
+  .concept img {
+    max-width: 350px;
+    width: 70%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .img3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .img3 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .concept-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .concept-text h3 {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  .reverse {
+    flex-direction: column;
+  }
+}

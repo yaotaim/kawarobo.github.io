@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+body {
+  font-family: "Zen Maru Gothic", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  height: 310px;
+  background-image: url(../images/kawarobo/hai.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+
+
+.contents {
+  margin-top: 50px;
+  max-width: 1500px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contents h2 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 40px;
+
+}
+
+.contents p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+
+.contents h2::after {
+  content: '';
+  display: block;
+  width: 500px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.chap{
+  margin-bottom: 60px;
+}
+
+.his-list {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  column-gap: 50px;
+  row-gap: 40px;
+}
+
+
+.his-list dl {
+  margin-top: 20px;
+}
+
+.his-list dt {
+  font-weight: bold;
+}
+
+.his-list dd {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.chap img{
+  width: 300px;
+}
+
+
+.git {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 16px;
+  max-width: 400px;
+  margin-right: 0px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.git-con {
+  display: flex;
+  align-items: center;
+
+}
+
+.github-logo {
+  height: 90px;
+  margin-right: 10px;
+}
+
+.git-container {
+  display: flex;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 40px;
+}
+
+
+.git-con h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.git-con p3 {
+  margin: 0;
+  color: #586069;
+}
+
+
+
+.footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+  .title {
+    height:100px;
+    background-size: cover; 
+  }
+
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .contents {
+    width: 95%;
+    margin-top: 40px;
+  }
+
+  .contents h2 {
+    font-size: 30px; 
+  }
+
+  .contents h2::after {
+    content: '';
+    display: block;
+    width: 230px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 2px;
+  }
+
+  .contents p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .his-list {
+    display: flex;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .his-list::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .his-list li {
+    flex-shrink: 0;
+    width: 300px; 
+    margin-right: 50px;
+    scroll-snap-align:center; 
+  }
+
+  .his-list li:last-child {
+    margin-right: 0; 
+  }
+
+  .his-list dt {
+    font-size: 30px; 
+  }
+
+  .his-list dd {
+    font-size: 18px;
+  }
+
+  .chap img{
+    width: 300px;
+  }
+
+  
+
+
+}

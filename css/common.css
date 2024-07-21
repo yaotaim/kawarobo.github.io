@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+*,
+::before,                       /*デフォルトの要素の余白をなくす*/
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;       /*要素の幅とサイズはpaddingとborderの値は含めない*/
+}
+
+ul,
+ol {
+  list-style: none;             /*リストの・を非表示にする*/
+}
+
+
+a {
+  color: inherit;               /*親要素の文字色を継承*/
+  text-decoration: none;        /*下線をなくす*/
+}
+
+
+body {
+  font-family: "Zen Maru Gothic", serif;
+  font-size: 30px;              /*フォントサイズ指定*/
+  color: #000000;             /*色指定*/
+  line-height: 1;               /*行間指定*/
+  background-color: #ffffff;  /*背景色指定*/
+}
+
+img {
+  max-width: 100%;              /*img要素の最大幅を指定　はみ出し防止*/
+}
+
+
+
+.header-inner {
+  max-width: 1500px;  /*ヘッダーのサイズを指定　max-widthで指定しておくとブラウザ幅に合わせて可変する表示にできる*/
+  height: 150px;
+  margin-left: auto;  /*ヘッダーをウェブブラウザの中央に表示する*/
+  margin-right: auto;
+  padding-left: 40px; /*ヘッダーの左右に余白を指定する*/
+  padding-right: 40px;
+  display: flex;      /*要素を横並びにする*/
+  justify-content: space-between;/*ロゴとナビゲーションを左右の端に寄せる*/
+  align-items: center;/*ロゴとナビゲーションの上下の高さを揃える*/
+}
+
+.toggle-menu-button {
+  display: none;      /*ハンバーガーメニューを非表示にする*/
+}
+
+.header-logo {
+  display: block;     /*ロゴのサイズを指定できるようにする*/
+  width: 200px;     
+}
+
+.site-menu ul {       /*要素を横並びにする*/
+  display: flex;
+}
+
+.site-menu ul li {  
+  margin-left: 20px;  /*ナビゲーションの項目間の余白を設定する*/
+  margin-right: 20px;
+}
+
+.site-menu ul li a {  
+  font-weight: bold;  /*太字*/
+}
+
+
+
+.footer {
+  color: #ffffff;             /*フッターの文字色*/
+  background-color: #156081;  /*フッターの背景色*/
+  padding-top: 30px;            /*フッターの上下の余白を指定*/
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;       /*要素を縦並びにする*/
+  align-items: center;          /*各要素を中央に配置*/
+  /*
+  text-align: center;
+  padding-left: 50px;
+  */
+}
+
+.footer-logo {
+  display: block;
+  width: 235px;                 /*大きいサイズを使っているのでwidthで本来表示したいサイズを指定する!!!*/
+  margin-top: 120px;
+}
+
+.footer-gakuban {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.footer-name {
+  font-size: 26px;
+  margin-top: 16px;
+}
+
+.copyright {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+
+/*スマホでの処理----------------------------*/
+@media (max-width: 800px) {
+  .site-menu ul {
+    font-size: 20px;
+    display: block;     /*ナビゲーションメニューを縦並びに変更する*/
+    text-align: center; /*ナビゲーションメニューを中央揃えする*/
+  }
+
+  .site-menu li {
+    margin-top: 20px;   /*各メニュー項目の上部に余白を設定*/
+  }
+
+  .header {
+    position: fixed;     /*ヘッダー領域を上部に固定*/
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 70px;        /*ヘッダー領域の高さ*/
+    z-index: 10;        /*ヘッダー領域を常に手前に表示*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /*ヘッダーに影をつける*/
+  }
+
+  .header-inner {
+    padding-left: 20px;   /*ヘッダーの内部のサイズを調整*/
+    padding-right: 20px;
+    height: 100%;
+    position: relative;   /*親要素を基準にした位置指定が可能*/
+  }
+
+  .header-logo {
+    width: 150px;        /*ロゴのサイズを調整*/
+  }
+
+  .header-site-menu {    /*メニューの土台を作成する*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    background-color: #736E62;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: none;        /*メニューを非表示にする*/
+  }
+
+  .header-site-menu.is-show { /*非表示にしたボタンを表示*/
+    display: block;       /*クラスが追加された時に表示するよう指示する*/
+  }
+
+  
+
+  .toggle-menu-button {
+    display: block;
+    width: 60px;          /*ボタンのサイズを指定*/
+    height: 34px;
+    background-image: url(../images/common/icon-menu.png);/*ボタンのアイコンを指定*/
+    background-size: 50%; /*背景画像のサイズを指定!!!!!!*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;   /*デフォルトのスタイル指定を解除する*/
+    border: none;
+    border-radius: 0;
+    outline: none;
+  }
+
+  .main {
+    padding-top: 70px; /*ヘッダーを上部に固定したことで見え苦なった部分に余白を入れコンテンツが重ならないようにする*/
+  }
+
+  
+
+  .footer-logo {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .footer-gakuban {
+    font-size: 20px;
+  }
+
+  .copyright {
+    margin-top: 50px;
+  }
+
+  .footer {
+    margin-top: 50px; 
+  }
+
+  .footer-logo img {
+    width: 150px; 
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+}
