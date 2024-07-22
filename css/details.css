@@ -265,6 +265,11 @@ p3 {
 }
 
 @media (max-width: 800px) {
+  .con {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .title {
     height: 100px;
     background-size: cover;
@@ -277,23 +282,19 @@ p3 {
 
   h3 {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   h3::after {
     content: '';
     display: block;
-    width: 300px;
+    width: 80%;
     height: 3px;
     background-color: #000000;
     margin-top: 10px;
     margin-left: 0px;
   }
 
-  p3 {
-    color: red;
-    font-size: 20px;
-  }
 
   .title h1 {
     font-size: 20px;
@@ -305,35 +306,22 @@ p3 {
     margin-top: 15px;
   }
 
+  .use h3 {
+    font-size: 20px;
+  }
   .use p {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.5;
   }
 
-  .list2 {
-    width: 100%;
-    max-width: 100%;
-    margin: 0px auto 100px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px 10px;
-    justify-content: center;
-  }
 
-  .list4 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .cando-list {
-    grid-template-columns: 1fr;
-  }
-
-  .UI-list {
-    grid-template-columns: 1fr;
+  .contents {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   .contents p {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .contents p1 {
@@ -350,11 +338,11 @@ p3 {
   }
 
   .contents p2 {
-    font-size: 20px;
+    font-size: 9px;
   }
 
   .contents p3 {
-    font-size: 20px;
+    font-size: 14px;
     color: red;
   }
 
@@ -362,36 +350,168 @@ p3 {
     font-size: 20px;
   }
 
-  .cando-list {
+
+  .list2 {
     width: 100%;
     max-width: 100%;
-    margin: 0px auto 20px;
-    margin-top: 40px;
+    margin: 0px auto 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 10px;
+    justify-content: center;
+    margin-bottom: 10px; 
+    text-align: center;
+  }
+
+  .list2 p{
+    margin-bottom: 0px;
+  }
+
+  .p80{
+    width: 80%;
+  }
+
+  .siskairozu{
+    width: 80%;
+  }
+
+  .item-1 {
+    order: 1;
+  }
+
+  .item-2 {
+      order: 3;
+  }
+
+  .item-3 {
+      order: 2;
+  }
+
+  .item-4 {
+      order: 4;
+  }
+
+  .img1 img {
+    width: 150px;
+  }
+  
+  .img2 img {
+    width: 450px;
+  }
+  
+  .img3 img {
+    width: 100%;
+  }
+
+  .list4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5px; 
+    margin: 0 auto; 
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .list4 li {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img1 img {
+    width: 60%;
+  }
+
+  .img2 img {
+    width: 100%;
+  }
+  
+  .list4 p1, .list4 p2, .list4 p3 {
+    margin: 0;
+  }
+  
+
+  .list4 p2 {
+    font-size: 12px; 
+    line-height: 1.2;
+  }
+
+  .o1 {
+    order: 1;
+  }
+  .o6 {
+    order: 2;
+  }
+  .o2 {
+    order: 3;
+  }
+  .o3 {
+    order: 4;
+  }
+  .o4 {
+    order: 5;
+  }
+  .o7 {
+    order: 6;
+  }
+  .o8 {
+    order: 7;
+  }
+  .o9 {
+    order: 8;
+  }
+  .o10 {
+    order: 9;
+  }
+
+
+  .UI-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cando-list {
+    display: flex;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     overflow-x: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
+  }
+  
+  .cando-list::-webkit-scrollbar {
+    display: none;
+  }
+  
   .cando-list li {
-    flex: 0 0 auto; /* Ensure items do not shrink */
-    margin-right: 10px; /* Adjust space between items */
+    flex-shrink: 0;
+    width: 300px; 
+    margin-right: 5px; 
   }
-
+  
+  .cando-list li:first-child {
+    margin-left: 2200px; 
+  }
+  
+  .cando-list li:last-child {
+    margin-right: 0; 
+  }
+  
   .git-container {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
   }
+  
 
   .git {
     border: 1px solid #e1e4e8;
     border-radius: 6px;
     padding: 16px;
     max-width: 500px;
-    margin-bottom: 30px; /* Add margin to separate rows */
+    margin-bottom: 30px;
   }
 
   .git {
@@ -416,14 +536,53 @@ p3 {
 
   .git-con h2 {
     margin: 0;
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .git-con p {
     margin: 0;
-    font-size: 20px;
+    font-size: 14px;
     color: #586069;
   }
+
+  .demo {
+    margin-bottom: 20px;
+  }
+
+  .d1 {
+    text-align: center;
+    order: 1;
+  }
+  .d3 {
+    text-align: center;
+    order: 2;
+  }
+  .d2 {
+    text-align: center;
+    order: 3;
+  }
+  .d4 {
+    text-align: center;
+    order: 4;
+  }
+  .d5 {
+    text-align: center;
+    order: 5;
+  }
+  .d7 {
+    text-align: center;
+    order: 6;
+  }
+  .d6 {
+    text-align: center;
+    order: 7;
+  }
+  .d8 {
+    text-align: center;
+    order: 8;
+  }
+
+
 
   .kaizen {
     margin-left: 30px;
