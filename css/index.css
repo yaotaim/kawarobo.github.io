@@ -125,7 +125,7 @@
 
 @media (max-width: 800px) {
   .first-view {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 10px);
     background-image: url(../images/kawarobo/3-5.png);
     background-size: 120%;
     align-items: flex-start;
