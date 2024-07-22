@@ -213,6 +213,30 @@ body {
   .chap img{
     width: 300px;
   }
+  .github-logo {
+  height: 90px;
+  margin-right: 10px;
+}
+
+.git-container {
+  display: flex;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 40px;
+}
+
+
+.git-con h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.git-con p3 {
+  font-size: 15px;
+  margin: 0;
+  color: #586069;
+}
 
   
 
