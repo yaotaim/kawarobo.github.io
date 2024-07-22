@@ -43,6 +43,8 @@
       <h1>DETAILS</h1>
     </div>
 
+  <div class="con">
+
     <div class="use">
       <h3>・頭部分に主に使用したもの</h3>
       <p>・RasberryPi4 8GB</p>
@@ -58,15 +60,13 @@
     <div class="contents">
       <h3>・システム・回路(頭部分)</h3>
       <ul class="list2">
-        <li><p>回路図</p></li>
-        <li><p>システム概要図</p></li>
-        <li><img src="./images/kawarobo/kairo3.png" alt="回路図"></li>
-        <li><img src="./images/kawarobo/sisugai.png" alt="システム概要図"></li>
+        <li class="item-1"><p>回路図</p></li>
+        <li class="item-2"><p>システム概要図</p></li>
+        <li class="item-3"><img src="./images/kawarobo/kairo3.png" alt="回路図" class="p80"></li>
+        <li class="item-4"><img src="./images/kawarobo/sisugai.png" alt="システム概要図" class="p80"></li>
       </ul>
     </div>
-
-
-
+    
     <div class="contents">
       <h3>・PIカメラとOAK-D-Liteの比較</h3>
       <ul class="list4">
@@ -78,13 +78,9 @@
 
         <li>
           <p1>PIカメラ<br></p1>
-          <p2>フレームレート<br>→約</p2>
-          <p3>3.3</p3>
-          <p2>FPS<br> <br>実際のラグ<br>→約</p2>
-          <p3>2.4</p3>
-          <p2>s</p2>
+          <p2>フレームレート<br>→約3.3FPS<br>実際のラグ<br>→約2.4s</p2>
         </li>
-
+        
         <li>
           <div class="img1">
             <img src="./images/kawarobo/oak.jpg" alt="OAK">
@@ -93,35 +89,30 @@
 
         <li>
           <p1>OAK-D-LITE<br></p1>
-          <p2>フレームレート<br>→約</p2>
-          <p3>18.3</p3>
-          <p2>FPS<br> <br>実際のラグ<br>→約</p2>
-          <p3>0.7</p3>
-          <p2>s</p2>
+          <p2>フレームレート<br>→約18.3FPS<br>実際のラグ<br>→約0.7s</p2>
         </li>
       </ul>
 
       <ul class="list2">
-        <li><img src="./images/kawarobo/paicam3.gif" alt="パイカメラのラグ"></li>
-        <li><img src="./images/kawarobo/oak3.gif" alt="OAKのカメラのラグ"></li>
+        <li><img src="./images/kawarobo/paicam3.gif" alt="パイカメラのラグ"class="p80"></li>
+        <li><img src="./images/kawarobo/oak3.gif" alt="OAKのカメラのラグ"class="p80"></li>
       </ul>
     </div>
-
 
     <div class="contents">
       <h3>・OAK-D-LITEでできること</h3>   
       <p>物体検知・<p3>座標取得(xyz平面)</p3>・姿勢推移・<p3>顔,手認識</p3>etc...</p>
       <ul class="cando-list">
-        <li><div class="img2"><img src="./images/kawarobo/cando_oak1.png" alt="cando_oak1"></div></li>
-        <li><div class="img1"><img src="./images/kawarobo/hand-1.png" alt="3"></div></li>
-        <li><div class="img1"><img src="./images/kawarobo/hand-2.png" alt="4"></div></li>
-        <li><div class="img1"><img src="./images/kawarobo/hand-3.png" alt="5"></div></li>
-        <li><div class="img1"><img src="./images/kawarobo/hand-4.png" alt="OK"></div></li>
-        <li><div class="img2"><img src="./images/kawarobo/cando_oak2.jpeg" alt="cando_oak1"></div></li>
-        <li><div class="img1"><img src="./images/kawarobo/hand-5.png" alt="PEACE"></div></li>
-        <li><div class="img1"><img src="./images/kawarobo/hand-6.png" alt="FIST"></div></li>
-        <li><div class="img1"><img src="./images/kawarobo/hand-7.png" alt="RIGHT"></div></li>
-        <li><div class="img1"><img src="./images/kawarobo/hand-8.png" alt="LEFT"></div></li>
+        <li class="o1"><div class="img2"><img src="./images/kawarobo/cando_oak1.png" alt="cando_oak1"></div></li>
+        <li class="o2"><div class="img1"><img src="./images/kawarobo/hand-1.png" alt="3"></div></li>
+        <li class="o3"><div class="img1"><img src="./images/kawarobo/hand-2.png" alt="4"></div></li>
+        <li class="o4"><div class="img1"><img src="./images/kawarobo/hand-3.png" alt="5"></div></li>
+        <li class="o5"><div class="img1"><img src="./images/kawarobo/hand-4.png" alt="OK"></div></li>
+        <li class="o6"><div class="img2"><img src="./images/kawarobo/cando_oak2.jpeg" alt="cando_oak1"></div></li>
+        <li class="o7"><div class="img1"><img src="./images/kawarobo/hand-5.png" alt="PEACE"></div></li>
+        <li class="o8"><div class="img1"><img src="./images/kawarobo/hand-6.png" alt="FIST"></div></li>
+        <li class="o9"><div class="img1"><img src="./images/kawarobo/hand-7.png" alt="RIGHT"></div></li>
+        <li class="o10"><div class="img1"><img src="./images/kawarobo/hand-8.png" alt="LEFT"></div></li>
       </ul> 
       <div class="git-container">
         <div class="git">
@@ -223,14 +214,14 @@
           </div>
           <p>　</p>
           <ul class="list2">
-            <li><p2>指差し指示</p2></li>
-            <li><p2>指差し指示（正面から)</p2></li>
-            <li><div class="img9"><img src="./images/kawarobo/yubisasi.gif" alt="ESPフロチャ"></div></li>
-            <li><div class="img9"><img src="./images/kawarobo/hand_right.gif" alt="ESPフロチャ"></div></li>
-            <li><p2>ピース追従</p2></li>
-            <li><p2>あっち向いてホイ</p2></li>
-            <li><div class="img9"><img src="./images/kawarobo/PEASE.gif" alt="ESPフロチャ"></div></li>
-            <li><div class="img9"><img src="./images/kawarobo/attimuite.gif" alt="ESPフロチャ"></div></li>
+            <li class="d1"><p2>指差し指示</p2></li>
+            <li class="d2"><p2>指差し指示（正面から)</p2></li>
+            <li class="d3"><div class="img9"><img src="./images/kawarobo/yubisasi.gif" alt="ESPフロチャ"></div></li>
+            <li class="d4"><div class="img9"><img src="./images/kawarobo/hand_right.gif" alt="ESPフロチャ"></div></li>
+            <li class="d5"><p2>ピース追従</p2></li>
+            <li class="d6"><p2>あっち向いてホイ</p2></li>
+            <li class="d7"><div class="img9"><img src="./images/kawarobo/PEASE.gif" alt="ESPフロチャ"></div></li>
+            <li class="d8"><div class="img9"><img src="./images/kawarobo/attimuite.gif" alt="ESPフロチャ"></div></li>
           </ul>
         </div>
       </div>
@@ -239,7 +230,7 @@
         <h3>・改善点</h3>
         <p>1.今回頭と体を合体して制御するところまでいかなかったので合体させる。</p>
         <p>2.顔追従の際に追従より先に顔がフレームアウトした際にも、適切に追従を続けるようにするなど。</p>
-        <p>3.かわいい動作をもっと作る→自由度を増やす</p>
+        <p>3.かわいい動作をもっと作る→自由度を増やす(ロール)</p>
         <p>　</p>
         <p>4.カメラ自体を顔にするのではなくカメラを胴体部につける:ハード的な視点</p>
         <p>問題:根本のSG90がカメラの重さにより負担+足制御の負担(重心)</p>
@@ -247,13 +238,13 @@
         <p>　</p>
         <p>カメラを胴体につけた時のサーボ制御方法+頭がカメラのときでもより早く顔を追従するために...</p>
         <p>→逆運動学を用いてサーボ制御が必要</p>
-        <p>問題:現在はプログラムのループ上にサーボ制御を組み込んでおり、サーボ制御時にはカメラの情報取得が止まってしまうので、逆運動学の式でサーボを動かしても滑らかかつ早く追従することができなかった。</p>
+        <p>問題:現在はプログラムのループ上にサーボ制御を組み込んでおり、サーボ制御時にはカメラの情報取得が止まってしまうので、逆運動学の式でサーボを動かしても滑らかかつ早く追従することができない。</p>
         <p>ラズパイは画像処理とシリアル送ることに集中させ、ESP側でサーボ制御する。</p>
         <p>この際、ラズパイとESP間で高速通信した際、カメラが停止する問題があったので通信方法を見直す。</p>
 
 
       </div>
-
+    </div>
   </main>
   <!-- mainここまで -->
 
