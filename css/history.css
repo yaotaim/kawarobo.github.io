@@ -49,9 +49,9 @@ body {
 }
 
 .contents p {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 1.5;
 }
 
 
@@ -99,7 +99,7 @@ body {
   border: 1px solid #e1e4e8;
   border-radius: 6px;
   padding: 16px;
-  max-width: 700px;
+  max-width: 400px;
   margin-right: 30px;
 }
 
@@ -129,7 +129,7 @@ body {
 
 .git-con h3 {
   margin: 0;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.2;
 }
 
