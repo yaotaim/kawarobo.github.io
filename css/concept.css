@@ -89,9 +89,6 @@ body {
   text-align: center;
 }
 
-.img3 img{
-  height: 350px;
-}
 
 .reverse {
   flex-direction: row-reverse;
@@ -142,7 +139,6 @@ body {
   .concept {
     flex-direction: column;
     align-items: center;
-    width: 100%;
     max-width: 1080px;
     padding: 0 20px;
     margin-top: 30px;
@@ -151,7 +147,7 @@ body {
   
   .concept img {
     max-width: 350px;
-    width: 70%;
+    width: 60%;
     height: auto;
     margin-top: 10px;
     margin-bottom: 20px;

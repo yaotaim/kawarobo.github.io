@@ -24,7 +24,7 @@
 
 .chapter-list {
   width: 100%;
-  max-width: 90%;
+  max-width: 70%;
   margin: 0px auto 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
@@ -158,7 +158,7 @@
   }
 
   .chapter-list dd {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 20px;
     margin-top: 16px;
   }
